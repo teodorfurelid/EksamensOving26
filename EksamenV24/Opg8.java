@@ -13,7 +13,7 @@ public static <T extends Comparable<T>> int binærsøk(T[] tabell, T verdi) {
             return midten;
         } else-if (sammenligning < 0) {
             //verdi er mindre, søk i venstre halvdel
-        høyre = midten - 1;
+            høyre = midten - 1;
         } else {
             //verdi er større, søk i høgre halvdel
             venstre = midten + 1;
@@ -45,4 +45,4 @@ public static <T extends Comparable<T>> void kvikksorter(T[] tabell, int venstre
         kvikksorter(tabell, venstre, pivot-1);
         kvikksorter(tabell, pivot + 1, høyre);
     }
-}asdmfnas.dfn
+}
